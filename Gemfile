@@ -14,6 +14,8 @@ gem "mysql"
 gem "flutie"
 gem "dynamic_form"
 gem "newrelic_rpm"
+gem "foreigner"
+gem "transitions", :require => ["transitions", "active_record/transitions"]
 
 # RSpec needs to be in :development group to expose generators
 # and rake tasks without having to type RAILS_ENV=test.
@@ -38,4 +40,5 @@ group :test do
   gem "launchy"
   gem "akephalos", :git => "git://github.com/thoughtbot/akephalos.git"
   gem "thin"
+  gem "spork", '~> 0.9.0.rc3'
 end
