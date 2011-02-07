@@ -26,10 +26,10 @@ group :development, :test do
 end
 
 group :test do
-  gem "cucumber-rails"
+  gem "cucumber-rails", :git => "https://github.com/johnf/cucumber-rails.git"
   gem "factory_girl_rails"
   gem "bourne"
-  gem "capybara"
+  gem "capybara", "~> 0.4.0"
   gem "database_cleaner"
   gem "fakeweb"
   gem "sham_rack"
@@ -38,7 +38,7 @@ group :test do
   gem "treetop"
   gem "shoulda"
   gem "launchy"
-  gem "akephalos", :git => "git://github.com/thoughtbot/akephalos.git"
+  gem "akephalos"
   gem "thin"
   gem "spork", '~> 0.9.0.rc3'
 end
