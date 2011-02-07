@@ -11,10 +11,11 @@ class CreatePlayers < ActiveRecord::Migration
       t.datetime :last_fed_at
 
       # the system user this is
-      t.references :users, :foreign_key => true
+      t.references :user, :foreign_key => true
 
       t.timestamps
     end
+    add_foreign_key :players, :users
   end
 
   def self.down
