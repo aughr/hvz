@@ -1,0 +1,9 @@
+%h1 Edit #{@game.name}
+
+= semantic_form_for @game do |f|
+  = f.inputs do
+    = f.input :name
+    = f.input :starts_at, :as => :string
+    = f.input :ends_at, :as => :string
+  = f.buttons do
+    = f.commit_button

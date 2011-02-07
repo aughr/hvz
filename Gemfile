@@ -16,6 +16,8 @@ gem "dynamic_form"
 gem "newrelic_rpm"
 gem "foreigner"
 gem "transitions", :require => ["transitions", "active_record/transitions"]
+gem "haml"
+gem 'inherited_resources', '~> 1.2.1'
 
 # RSpec needs to be in :development group to expose generators
 # and rake tasks without having to type RAILS_ENV=test.

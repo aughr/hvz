@@ -1,0 +1,22 @@
+%h1
+  = @game.name
+
+%dl
+
+  %dt
+    Starts at:
+  %dd#starts-at
+    - if @game.starts_at
+      = @game.starts_at.to_s :descriptive
+    - else
+      None set
+
+  %dt
+    Ends at:
+  %dd#ends-at
+    - if @game.ends_at
+      = @game.ends_at.to_s :descriptive
+    - else
+      None set
+
+= link_to "Edit", edit_game_path(@game)
